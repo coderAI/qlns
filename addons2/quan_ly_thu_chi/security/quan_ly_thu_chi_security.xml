@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <record id="group_use_qlns_ctg" model="res.groups">
+        <field name="name">Quản Lý Thu Chi</field>        
+    </record>
+
+
+
+</odoo>

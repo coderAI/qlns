@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_qltc_danh_muc,qltc.danh.muc,model_danh_muc,quan_ly_thu_chi.group_use_qlns_ctg,1,1,1,1
+access_qltc_nguon_thu,qltc.nguon.thu,model_nguon_thu,quan_ly_thu_chi.group_use_qlns_ctg,1,1,1,1
+access_qltc_nguon_chi,qltc.nguon.chi,model_nguon_chi,quan_ly_thu_chi.group_use_qlns_ctg,1,1,1,1

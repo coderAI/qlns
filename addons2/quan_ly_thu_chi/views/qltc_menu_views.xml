@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Top menu item -->
+    <!--
+        This menu item's purpose is to overwrite another one defined in
+        the base module in order to set new groups.
+    -->
+    <menuitem
+        id="qltc_menu_root"
+        name="Quan Ly Thu Chi"              
+        sequence="25"/>
+
+    <!-- (MAIN USER MENU) 
+
+    <menuitem
+        id="menu_nguon_thu"
+        name="Nguon Thu"
+        parent="qltc_menu_root"
+        action="qltc.action_nguon_thu"
+        sequence="1"/>
+    <menuitem
+        id="menu_nguon_chi"
+        name="Nguon Chi"
+        parent="qltc_menu_root"
+        action="qltc.action_nguon_chi"
+        sequence="2"/>
+-->
+
+    <!-- REPORTING 
+    <menuitem
+        id="crm_menu_report"
+        name="Reporting"
+        parent="crm_menu_root"
+        sequence="20"
+        groups="sales_team.group_sale_salesman"/>-->
+    <!-- CONFIGURATION -->
+    <menuitem
+        id="menu_danh_muc"
+        name="Danh Muc"
+        parent="qltc_menu_root"
+        action="qltc.action_danh_muc"
+        sequence="3"/>
+
+</odoo>
