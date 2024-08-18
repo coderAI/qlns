@@ -1,45 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <!-- Root Menu -->
+    <menuitem id="menu_root_quan_ly_thu_chi" name="Quản Lý Thu Chi" sequence="10"/>
 
-    <!-- Top menu item -->
-    <!--
-        This menu item's purpose is to overwrite another one defined in
-        the base module in order to set new groups.
-    -->
-    <menuitem
-        id="qltc_menu_root"
-        name="Quan Ly Thu Chi"              
-        sequence="25"/>
+    <!-- Level 1 Menus -->
+    <menuitem id="menu_nguon_thu" name="Nguồn Thu" parent="menu_root_quan_ly_thu_chi" action="action_nguon_thu" sequence="10"/>
+    <menuitem id="menu_nguon_chi" name="Nguồn Chi" parent="menu_root_quan_ly_thu_chi" action="action_nguon_chi" sequence="20"/>
+    <menuitem id="menu_report" name="Báo Cáo" parent="menu_root_quan_ly_thu_chi" sequence="21"/>
+    <menuitem id="menu_config" name="Cấu Hình" parent="menu_root_quan_ly_thu_chi" sequence="30"/>
 
-    <!-- (MAIN USER MENU) 
-
-    <menuitem
-        id="menu_nguon_thu"
-        name="Nguon Thu"
-        parent="qltc_menu_root"
-        action="qltc.action_nguon_thu"
-        sequence="1"/>
-    <menuitem
-        id="menu_nguon_chi"
-        name="Nguon Chi"
-        parent="qltc_menu_root"
-        action="qltc.action_nguon_chi"
-        sequence="2"/>
--->
-
-    <!-- REPORTING 
-    <menuitem
-        id="crm_menu_report"
-        name="Reporting"
-        parent="crm_menu_root"
-        sequence="20"
-        groups="sales_team.group_sale_salesman"/>-->
-    <!-- CONFIGURATION -->
-    <menuitem
-        id="menu_danh_muc"
-        name="Danh Muc"
-        parent="qltc_menu_root"
-        action="qltc.action_danh_muc"
-        sequence="3"/>
-
+    <!-- Level 2 Menus -->
+    <menuitem id="menu_danh_muc" name="Danh Mục" parent="menu_config" action="action_danh_muc" sequence="10"/>
+	
+	<menuitem id="menu_nguon_chi_report" name="Nguồn Chi" parent="menu_report" action="action_nguon_chi_reprot"  sequence="20"/>
+	<menuitem id="menu_nguon_thu_report" name="Nguồn Thu" parent="menu_report" action="action_nguon_thu_reprot"  sequence="19"/>
 </odoo>

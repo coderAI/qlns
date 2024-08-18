@@ -8,8 +8,8 @@ class NguonChi(models.Model):
     _name = 'nguon.chi'
 
     name = fields.Char(string='Tên', required=True)
-    description = fields.Text(string='Tên', required=True)
+    description = fields.Text(string='Ghi Chú', required=True)
     opportunity_id = fields.Many2one(
-        'danh.muc', u'Loại', domain="[('type', '=', 'out')]")
+        'danh.muc', string= 'Loại', domain="[('type', '=', 'out')]")
     total = fields.Integer(string= 'Số Tiền')
     date = fields.Date(string='Ngày Chi' )

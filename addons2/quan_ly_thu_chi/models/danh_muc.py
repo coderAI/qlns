@@ -9,5 +9,5 @@ class DanhMuc(models.Model):
 
     code = fields.Integer(string='Mã Danh Mục')
     name = fields.Char(string='Tên Danh Mục', required=True)
-    type = fields.selection([('in','Thu'),('out','Chi')],string = u'Loại Danh Mục')
+    type = fields.Selection([('in','Thu'),('out','Chi')],string = u'Loại Danh Mục')
 
